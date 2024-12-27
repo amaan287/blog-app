@@ -65,7 +65,7 @@ export default function CustomPreloader() {
         className="daily-airs fixed inset-x-0 bottom-0 z-50  flex items-center text-2xl justify-center text-white md:text-6xl font-bold"
         style={{ transform: "translateY(100%)" }}
       >
-        D A I L Y &nbsp; A I R S
+        H e r i t a g e &nbsp; S t r o k e s
       </div>
     </div>
   );

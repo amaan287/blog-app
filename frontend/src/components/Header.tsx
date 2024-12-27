@@ -44,14 +44,10 @@ function Header() {
           to="/"
           className="text-sm sm:text-xl font-semibold flex items-center justify-center gap-2"
         >
-          <div className="h-5 w-6 bg-black dark:bg-white rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm flex-shrink-0" />
-          <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="font-medium text-black dark:text-white whitespace-pre"
-          >
-            Daily airs
-          </motion.span>
+          <div className="h-5 w-6 bg-[url('/favicon.ico')] bg-center bg-cover flex-shrink-0" />
+          <span className="font-medium text-black dark:text-white whitespace-pre">
+            Heritage Strokes
+          </span>
         </Link>
 
         <div className="flex gap-5 items-center justify-center">
@@ -74,7 +70,9 @@ function Header() {
             </DropdownMenuContent>
           </DropdownMenu> */}
           <ModeToggle />
-
+          <div>
+            <Link to={"/socials"}>Socials</Link>
+          </div>
           {currentUser ? (
             <div className="flex gap-4">
               <DropdownMenu>

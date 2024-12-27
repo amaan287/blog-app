@@ -14,7 +14,8 @@ import { FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { Mail } from "lucide-react";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
-
+const phoneNumber = `+919784404469`;
+const message = `Hello, I am interested in your services. Please provide me with more details.`;
 const DATA = {
   contact: {
     social: {
@@ -30,7 +31,7 @@ const DATA = {
       },
       Whatsapp: {
         name: "Whatsapp",
-        url: "#",
+        url: `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`,
         icon: FaWhatsapp,
       },
       email: {
@@ -48,7 +49,7 @@ export function DockD() {
       <TooltipProvider>
         <Dock
           direction="middle"
-          className="w-64 bg-background border-primary flex items-center justify-center "
+          className="w-64 bg-transparent border-primary flex items-center justify-center "
         >
           {Object.entries(DATA.contact.social).map(([name, social]) => (
             <DockIcon key={name}>
@@ -56,6 +57,7 @@ export function DockD() {
                 <TooltipTrigger asChild>
                   <Link
                     to={social.url}
+                    target="_blank"
                     className={cn(
                       buttonVariants({ variant: "ghost", size: "icon" }),
                       "size-12 rounded-full"
