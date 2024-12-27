@@ -15,8 +15,6 @@ import {
 import { DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
 import { Button } from "./ui/button";
 import { ModeToggle } from "./mode-toggle";
-
-import { motion } from "framer-motion";
 function Header() {
   const dispatch = useDispatch();
   const { currentUser } = useSelector((state: RootState) => state.user);
