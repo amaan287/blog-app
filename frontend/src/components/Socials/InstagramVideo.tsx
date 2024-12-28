@@ -36,7 +36,7 @@ export default function InstagramVideo() {
         <blockquote
           data-instgrm-permalink="https://www.instagram.com/reel/C-C85d5PwbI/?utm_source=ig_embed&amp;utm_campaign=loading"
           data-instgrm-version="14"
-          className="instagram-media bg-gray-800 border border-gray-700 rounded-xl shadow-lg max-w-full p-0 transition-transform hover:scale-105 duration-300"
+          className="instagram-media bg-gray-800 border border-gray-700 rounded-xl shadow-lg max-w-screen p-0 transition-transform hover:scale-105 duration-300"
         >
           <div className="p-6">
             <a

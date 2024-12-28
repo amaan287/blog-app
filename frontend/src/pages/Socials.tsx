@@ -67,7 +67,7 @@ export default function Socials() {
       </div>
 
       {/* Dock Component */}
-      <div className="fixed bottom-0 w-full bg-card z-50">
+      <div className="fixed bottom-0 w-full  z-50">
         <DockD />
       </div>
     </div>

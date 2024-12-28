@@ -43,8 +43,9 @@ export default function FooterCom() {
                 >
                   Mail
                 </Footer.Link>
-                <p className="md:hidden text-xs">
-                  Priyanshsoni0282003@gmail.com
+                <p className="md:hidden flex flex-wrap text-xs">
+                  Priyanshsoni0282003
+                  <span>@gmail.com</span>
                 </p>
                 <Footer.Link
                   href={`https://wa.me/${"+919784404469"}?text=${encodeURIComponent(
