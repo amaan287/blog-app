@@ -21,9 +21,10 @@ export function DialogDemo() {
         <DialogHeader>
           <DialogTitle> Get in Touch with Us!</DialogTitle>
           <DialogDescription>
-            We're here to help with any questions, suggestions, or concerns.
-            Connect with us on WhatsApp for quick and efficient support. Our
-            team is ready to assist you!
+            The mail link will only work if you are running the app in a PC or
+            Laptop if you are using a mobile device please copy the mail address
+            and paste it in your mail app.{" "}
+            <b className="dark:text-white">Priyanshsoni0282003@gmail.com</b>
           </DialogDescription>
         </DialogHeader>
         <div className="grid gap-4 py-4">

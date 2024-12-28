@@ -43,6 +43,9 @@ export default function FooterCom() {
                 >
                   Mail
                 </Footer.Link>
+                <p className="md:hidden text-xs">
+                  Priyanshsoni0282003@gmail.com
+                </p>
                 <Footer.Link
                   href={`https://wa.me/${"+919784404469"}?text=${encodeURIComponent(
                     `Hello, I am interested in your services. Please provide me with more details.`
@@ -100,9 +103,15 @@ export default function FooterCom() {
             />
             <Footer.Icon
               target="_blank"
-              href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKjgCQbcxnCJLLJlkzDlbpNPMKMrbCckKbXlVSmKrhDkFnlkhVFTQtSTXdpJSSjxHRdWnWS"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=Priyanshsoni0282003@gmail.com&su=Hello%20Priyansh&body=Hello%20Priyansh,%20I%20am%20interested%20in%20your%20services.%20Please%20provide%20me%20with%20more%20details."
               icon={Mail}
             />
+
+            {/* <Footer.Icon
+              target="_blank"
+              href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKjgCQbcxnCJLLJlkzDlbpNPMKMrbCckKbXlVSmKrhDkFnlkhVFTQtSTXdpJSSjxHRdWnWS"
+              icon={Mail}
+            /> */}
           </div>
         </div>
       </div>

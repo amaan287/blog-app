@@ -16,22 +16,24 @@ export default function Socials() {
   }
 
   return (
-    <div className="min-h-screen bg-card text-white mx-2">
+    <div className="min-h-screen bg-card text-white">
       <ScrollToTop />
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-16">
-        <div className="space-y-32">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div className="space-y-24">
+          {/* Hero Section */}
           <HeroSection />
 
-          <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-16">
-            <div className="md:w-1/2 space-y-8">
+          {/* YouTube Section */}
+          <div className="flex flex-wrap md:flex-nowrap  justify-between gap-12">
+            <div className="w-full  md:w-1/2 space-y-6">
               <p className="text-gray-300 text-lg">
                 Stay inspired, stay connected. Join us on our journey!
               </p>
             </div>
 
-            <div className="md:w-1/2 flex flex-col space-y-8">
+            <div className="w-full md:w-1/2 flex flex-col space-y-8">
               <YoutubeVideo />
-              <div className="space-y-4 flex flex-col">
+              <div className="space-y-4">
                 <p className="text-lg text-gray-400">
                   Dive into a world of exclusive content and opportunities.
                 </p>
@@ -52,24 +54,20 @@ export default function Socials() {
             </div>
           </div>
 
-          <div className="space-y-12 pb-20 gap-2">
-            <h2 className="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-400">
+          {/* Instagram Section */}
+          <div className="space-y-12 pb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-400">
               What about Instagram?
             </h2>
-            <div className="bg-card border p-8 rounded-lg shadow-lg">
+            <div className="bg-card border p-6 sm:p-8 rounded-lg shadow-lg">
               <InstagramVideo />
-            </div>
-            <div className="flex justify-center space-x-4">
-              <Link
-                to="https://www.instagram.com/priyanshsoniii/"
-                target="_blank"
-              ></Link>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="fixed bottom-0 w-full ">
+      {/* Dock Component */}
+      <div className="fixed bottom-0 w-full bg-card z-50">
         <DockD />
       </div>
     </div>
