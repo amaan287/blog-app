@@ -36,7 +36,7 @@ function Header() {
 
   return (
     <div className=" top-0 z-50 ">
-      <nav className="border-b-2 mx-2 bg-gray-100 dark:bg-card rounded-xl shadow-xl flex justify-between px-5 py-2 items-center z-50">
+      <nav className="border-b-2 md:mx-2 bg-gray-100 dark:bg-card rounded-xl shadow-xl flex justify-between px-5 py-2 items-center z-50">
         <Link
           to="/"
           className="text-sm sm:text-xl font-semibold flex items-center justify-center gap-2"
@@ -49,7 +49,7 @@ function Header() {
         <div className="md:hidden">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <h1 className=" cursor-pointer font-semibold border px-2 py-1 rounded-lg">
+              <h1 className=" cursor-pointer text-xl font-semibold px-2 py-1 rounded-lg">
                 <IoReorderThreeOutline />
               </h1>
             </DropdownMenuTrigger>
