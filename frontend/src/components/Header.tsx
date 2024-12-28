@@ -1,9 +1,8 @@
 import { Avatar } from "flowbite-react";
 import { Link } from "react-router-dom";
-
 import { useSelector, useDispatch } from "react-redux";
 import { signoutSuccess } from "../redux/user/userSlice";
-
+import { IoReorderThreeOutline } from "react-icons/io5";
 import { RootState } from "../redux/store";
 import {
   DropdownMenu,
@@ -47,13 +46,51 @@ function Header() {
             Heritage Strokes
           </span>
         </Link>
-
-        <div className="flex gap-5 items-center justify-center">
+        <div className="md:hidden">
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <h1 className=" cursor-pointer font-semibold border px-2 py-1 rounded-lg">
+                <IoReorderThreeOutline />
+              </h1>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="py-4 flex flex-col  w-full">
+              <div className="w-full items-center flex justify-center  ">
+                {/* <ModeToggle /> */}
+              </div>
+              <Link to={"/story"} className="">
+                <DropdownMenuCheckboxItem className="cursor-pointer">
+                  My story
+                </DropdownMenuCheckboxItem>
+              </Link>
+              <Link to={"/socials"}>
+                <DropdownMenuCheckboxItem className="cursor-pointer">
+                  Socials
+                </DropdownMenuCheckboxItem>
+              </Link>
+              {currentUser ? (
+                <Link to={"/"} onClick={handleSignout}>
+                  <DropdownMenuCheckboxItem className="cursor-pointer">
+                    Signout
+                  </DropdownMenuCheckboxItem>
+                </Link>
+              ) : (
+                <div>
+                  <Link to={"/sign-in"}>
+                    <DropdownMenuCheckboxItem className=" bg-yellow-50 hover:bg-orange-50 text-card cursor-pointer">
+                      Login
+                    </DropdownMenuCheckboxItem>{" "}
+                  </Link>
+                </div>
+              )}
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
+        <div className="hidden md:flex gap-5 items-center justify-center">
           {/* <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <h1 className=" cursor-pointer  text-xs md:text-md font-semibold border px-2 py-1 rounded-lg">
-                Community
-              </h1>
+            <h1 className=" cursor-pointer  text-xs md:text-md font-semibold border px-2 py-1 rounded-lg">
+            Community
+            </h1>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56 py-4">
               <Link to={"/story"}>
@@ -110,7 +147,9 @@ function Header() {
           ) : (
             <div>
               <Link to={"/sign-in"}>
-                <Button color={"black"}>SignIn</Button>
+                <Button className="text-gray-700 bg-gradient-to-r from-yellow-50 to-orange-50 hover:shadow-md hover:shadow-yellow-50 hover:bg-yellow-50 transition-all font-medium ">
+                  Login
+                </Button>
               </Link>
             </div>
           )}
