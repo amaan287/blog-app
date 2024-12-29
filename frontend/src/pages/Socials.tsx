@@ -55,14 +55,14 @@ export default function Socials() {
           </div>
 
           {/* Instagram Section */}
-          <div className="space-y-12 pb-20">
+          {/* <div className="space-y-12 pb-20">
             <h2 className="text-3xl sm:text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-400">
               What about Instagram?
             </h2>
             <div className="bg-card border p-6 sm:p-8 rounded-lg shadow-lg">
               <InstagramVideo />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

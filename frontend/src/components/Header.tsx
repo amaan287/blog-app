@@ -105,8 +105,11 @@ function Header() {
             </DropdownMenuContent>
           </DropdownMenu> */}
           <ModeToggle />
-          <div>
-            <Link to={"/socials"}>Socials</Link>
+          <div className="flex gap-4">
+            <Link to={"/socials"} className="">
+              Socials
+            </Link>
+            <Link to={"/story"}>Story</Link>
           </div>
           {currentUser ? (
             <div className="flex gap-4">
