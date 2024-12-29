@@ -1,5 +1,4 @@
 import { DockD } from "@/components/Dock";
-import InstagramVideo from "@/components/Socials/InstagramVideo";
 import HeroSection from "@/components/Socials/HeroSection";
 import YoutubeVideo from "@/components/YoutubeVideo";
 import { Button } from "flowbite-react";
