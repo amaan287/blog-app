@@ -58,7 +58,7 @@ export default function PostCard({ post }: PostCardProps) {
           </BlurFade>
           <BlurFade delay={0.35} blur="10px" inView>
             <div className="px-2 text-sm md:mt-7 mt-2   text-balance text-center">
-              {truncateContent(post.content, 200)}
+              {truncateContent(post.content, 100)}
             </div>{" "}
           </BlurFade>
           <BlurFade delay={0.35} blur="10px" inView>
