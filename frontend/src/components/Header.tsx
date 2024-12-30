@@ -57,6 +57,11 @@ function Header() {
               <div className="w-full items-center flex justify-center  ">
                 {/* <ModeToggle /> */}
               </div>
+              <Link to={"/all-posts"} className="">
+                <DropdownMenuCheckboxItem className="cursor-pointer">
+                  Posts
+                </DropdownMenuCheckboxItem>
+              </Link>
               <Link to={"/story"} className="">
                 <DropdownMenuCheckboxItem className="cursor-pointer">
                   My story
@@ -110,6 +115,9 @@ function Header() {
               Socials
             </Link>
             <Link to={"/story"}>Story</Link>
+            <Link to={"/all-posts"} className="">
+              Posts
+            </Link>
           </div>
           {currentUser ? (
             <div className="flex gap-4">
